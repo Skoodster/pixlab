@@ -94,19 +94,35 @@ public class PictureTester
     }
     
     /** Mirror L to R */
-    public static void testMirrorVertical() //L to R
+    public static void testMirrorLtoR() //L to R
     {
         Picture swan = new Picture("C:/Users/jules/Downloads/pictureLab/pixLab/images/swan.jpg");
         swan.explore();
-        swan.mirrorVertical();
+        swan.mirrorLtoR();
         swan.explore();
     }
 
     /** Mirror R to L */
-    public static void testMirrorVerticalRL(){ //R to L
+    public static void testMirrorRtoL(){ //R to L
         Picture swan = new Picture("C:/Users/jules/Downloads/pictureLab/pixLab/images/swan.jpg");
         swan.explore();
-        swan.mirrorVerticalRL();
+        swan.mirrorRtoL();
+        swan.explore();
+    }
+    
+    /** Mirror Bottom to Top */
+    public static void testMirrorBtoT(){
+        Picture swan = new Picture("C:/Users/jules/Downloads/pictureLab/pixLab/images/swan.jpg");
+        swan.explore();
+        swan.bottomtop();
+        swan.explore();
+    }
+    
+    /** Mirror Top to Bottom */
+    public static void testMirrorTtoB(){
+        Picture swan = new Picture("C:/Users/jules/Downloads/pictureLab/pixLab/images/swan.jpg");
+        swan.explore();
+        swan.topbottom();
         swan.explore();
     }
     
